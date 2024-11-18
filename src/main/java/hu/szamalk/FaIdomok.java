@@ -47,6 +47,7 @@ public class FaIdomok {
         return osszG;
     }
     public FaIdom maxV(){
+        //Collections.max()
         FaIdom max = idomok.get(0);
         for (int i = 0; i < idomok.size()-1; i++) {
             if(max.terfogat() < idomok.get(i+1).terfogat()){
@@ -57,6 +58,7 @@ public class FaIdomok {
     }
 
     public FaIdom minV(){
+        //Collections.min()
         FaIdom min = idomok.get(0);
         for (int i = 0; i < idomok.size()-1; i++) {
             if(min.terfogat() > idomok.get(i+1).terfogat()){
